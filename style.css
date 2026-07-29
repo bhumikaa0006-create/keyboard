@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #151534;
+    color: #fff;
+    padding: 20px;
+}
+
+.project {
+    width: 100%;
+    max-width: 500px;
+}
+
+#insert {
+    background: #16213e;
+    border: 2px solid #0f3460;
+    border-radius: 12px;
+    padding: 50px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key {
+    display: inline-block;
+    background: #0f3460;
+    border: 2px solid #533483;
+    border-radius: 10px;
+    padding: 20px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #e0e0e0;
+    min-width: 180px;
+}
+
+.key.active {
+    background: #533483;
+    border-color: #e94560;
+    color: #fff;
+}
+
+table,
+th,
+td {
+    border: 1px solid #e7e7e7;
+    border-collapse: collapse;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    #insert {
+        padding: 30px 20px;
+    }
+
+    .key {
+        padding: 15px 25px;
+        font-size: 18px;
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 400px) {
+    #insert {
+        padding: 20px 15px;
+        border-radius: 8px;
+    }
+
+    .key {
+        padding: 12px 20px;
+        font-size: 16px;
+        min-width: 120px;
+    }
+}
